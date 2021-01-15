@@ -67,4 +67,4 @@ function run() {
 }
 
 run();
-setInterval(run(), 64860000); //18 часов и 1 минута
+setInterval(run, 64860000); //18 часов и 1 минута
