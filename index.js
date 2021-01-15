@@ -51,7 +51,18 @@ function up(callback) {
 function run() {
     up(function (cb_success, cb_error, cb_length) {
         var date = new Date().toLocaleString();
-        console.log(date + ' Попытка поднять ' + cb_length + ' ' + num2str(cb_length, ['объявление', 'объявления', 'объявлений']) + ', успешно поднято ' + cb_success + ' ' + num2str(cb_success, ['объявление', 'объявления', 'объявлений']) + ', ждем 18 часов до следующего поднятия');
+        console.log(
+            date +
+            ' Попытка поднять ' +
+            cb_length +
+            ' ' +
+            num2str(cb_length, ['объявление', 'объявления', 'объявлений']) +
+            ', успешно поднято ' +
+            cb_success +
+            ' ' +
+            num2str(cb_success, ['объявление', 'объявления', 'объявлений']) +
+            ', ждем 18 часов до следующего поднятия'
+        );
     });
 }
 
